@@ -1,0 +1,32 @@
+gameScreen {
+    background-color: rgb(255, 255, 255);
+}
+
+boardIMG {
+    width: 310px;
+    height: 232px;
+    x-position: 5px;
+    y-position: 110px;
+    background-image: "./images/Connect4Board.png";
+    fit-image: fill;
+    border-width: 0px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
+
+}
+
+.label {
+    text-rendering: Player 1;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(50, 159, 255);
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-width: 0px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0px;
+}
+    
+}
