@@ -1,4 +1,4 @@
-//coordinate based logic 
+//game piece position placement-based logic 
 flag = 1;
 let count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0, count7 = 0;
 const column1 = ["b1-1", "b1-2", "b1-3", "b1-4", "b1-5", "b1-6"];

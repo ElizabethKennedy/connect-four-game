@@ -65,8 +65,7 @@ input {
     cursor: pointer;
 }
 #print {
-    font-family: Verdana,
-        Geneva, Tahoma, sans-serif;
+    font-family: 'Cream Cake','Verdana', 'Tahoma', 'sans-serif';
     color: purple;
     font-size: 20px;
 }
@@ -77,6 +76,6 @@ input {
 #ins {
     font-family: Verdana,
         Geneva, Tahoma, sans-serif;
-    color: purple;
-    font-size: 17px;
+    color: black;
+    font-size: 25px;
 }
