@@ -8,8 +8,8 @@ body {
     background-image: repeating-linear-gradient(
       to bottom,
       rgb(26, 198, 204),
-      rgb(26, 198, 204) 70%,
-      rgb(17, 125, 12) 10%
+      rgb(26, 198, 204) 5%,
+      rgb(125, 225, 12) 10%
     );
 }
    
