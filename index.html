@@ -1,30 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Connect Four Game</title>
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <main
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      "
-    >
-      <div class="center">
-        <h1>Connect Four Game</h1>
-        <p></p>
-            <button class="btn btn-primary" onClick="one-player">One Player</button>
-            <button class="btn btn-primary" onClick-="two-player">Two Player</button>
-        </p>
-      </div>
-    </main>
+<head>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+</head>
+<body>
+	<div id="main">
+		<h1>Connect Four Game</h1>
+		<h2>The Pink Player Takes the First Turn</h2>
 
-    <script src="app.js"></script>
-  </body>
+		<p id="blueTurn">Pink Player's Turn</p>
+		<p id="pinkTurn">Blue Player's Turn</p>
+
+		<br><br>
+
+		<div class="square repeating-gradient"></div>
+
+		<div>
+			<input type="text" id="b1-6" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-6" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-6" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-6" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-6" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-6" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-6" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<div>
+			<input type="text" id="b1-5" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-5" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-5" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-5" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-5" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-5" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-5" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<div>
+			<input type="text" id="b1-4" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-4" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-4" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-4" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-4" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-4" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-4" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<div>
+			<input type="text" id="b1-3" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-3" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-3" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-3" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-3" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-3" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-3" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<div>
+			<input type="text" id="b1-2" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-2" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-2" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-2" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-2" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-2" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-2" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<div>
+			<input type="text" id="b1-1" onclick="play(1); win();" readonly>
+			<input type="text" id="b2-1" onclick="play(2); win();" readonly>
+			<input type="text" id="b3-1" onclick="play(3); win();" readonly>
+			<input type="text" id="b4-1" onclick="play(4); win();" readonly>
+			<input type="text" id="b5-1" onclick="play(5); win();" readonly>
+			<input type="text" id="b6-1" onclick="play(6); win();" readonly>
+			<input type="text" id="b7-1" onclick="play(7); win();" readonly>
+			<br><br>
+		</div>
+		<button id="but" onclick="reset()">	RESET	</button>
+		<br><br>
+		<p id="print"></p>
+	</div>
+</body>
 </html>
-
