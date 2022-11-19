@@ -1,13 +1,13 @@
 //game piece position placement-based logic 
 flag = 1;
 let count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0, count7 = 0;
-const column1 = ["b1-1", "b1-2", "b1-3", "b1-4", "b1-5", "b1-6"];
-const column2 = ["b2-1", "b2-2", "b2-3", "b2-4", "b2-5", "b2-6"];
-const column3 = ["b3-1", "b3-2", "b3-3", "b3-4", "b3-5", "b3-6"];
-const column4 = ["b4-1", "b4-2", "b4-3", "b4-4", "b4-5", "b4-6"];
-const column5 = ["b5-1", "b5-2", "b5-3", "b5-4", "b5-5", "b5-6"];
-const column6 = ["b6-1", "b6-2", "b6-3", "b6-4", "b6-5", "b6-6"];
-const column7 = ["b7-1", "b7-2", "b7-3", "b7-4", "b7-5", "b7-6"];
+let column1 = ["b1-1", "b1-2", "b1-3", "b1-4", "b1-5", "b1-6"];
+let column2 = ["b2-1", "b2-2", "b2-3", "b2-4", "b2-5", "b2-6"];
+let column3 = ["b3-1", "b3-2", "b3-3", "b3-4", "b3-5", "b3-6"];
+let column4 = ["b4-1", "b4-2", "b4-3", "b4-4", "b4-5", "b4-6"];
+let column5 = ["b5-1", "b5-2", "b5-3", "b5-4", "b5-5", "b5-6"];
+let column6 = ["b6-1", "b6-2", "b6-3", "b6-4", "b6-5", "b6-6"];
+let column7 = ["b7-1", "b7-2", "b7-3", "b7-4", "b7-5", "b7-6"];
 
 function win() {
 	let b11 = document.getElementById("b1-1").value, b12 = document.getElementById("b1-2").value, b13 = document.getElementById("b1-3").value, b14 = document.getElementById("b1-4").value, b15 = document.getElementById("b1-5").value, b16 = document.getElementById("b1-6").value;
@@ -56,7 +56,7 @@ function win() {
 		}
 	}
 
-	//searches diagonal left
+	//diagonal left 
 	for (let col = 0; col < array.length-3; col++){
 		for (let row = 0; row < array[0].length-3; row++){
 			if (array[col][row] == 'X' && array[col+1][row+1] == 'X' && array[col+2][row+2] == 'X' && array[col+3][row+3] == 'X'){
@@ -69,7 +69,7 @@ function win() {
 		}
 	}
 
-	//searches diagonal right
+	//diagonal right
 	for (let col = 0; col < array.length; col++){
 		for (let row = 0; row < array[0].length; row++){
 			if (array[col][row] == 'X' && array[col+1][row-1] == 'X' && array[col+2][row-2] == 'X' && array[col+3][row-3] == 'X'){
