@@ -108,7 +108,7 @@ function disable() {
 		document.getElementById(column7[i]).disabled = true;
 	}
 }
-
+//potential winning patterns//
 function play(s) {
 
 	if (flag == 1){
