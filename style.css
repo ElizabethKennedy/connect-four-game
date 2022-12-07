@@ -26,10 +26,10 @@ h1 {
     font-size: 75px;
 }
 
-h2 {
+h2, h3 {
     color: black;
     font-family: 'Cream Cake', 'Trebuchet';
-    font-size: 38px;
+    font-size: 45px;
 }
 
 
