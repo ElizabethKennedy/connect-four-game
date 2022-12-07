@@ -6,14 +6,17 @@
 
 body {
     background-image: repeating-linear-gradient(
-      to bottom,
-      rgb(26, 198, 204),
+      to bottom);
+    background-image: linear-gradient(red, salmon, yellow);
+
+}
+     /* rgb(26, 198, 204),
       rgb(26, 198, 204) 5%,
       rgb(125, 225, 12) 10%
     );
-}
-   
-   
+
+*/
+
     /*background-color: rgb(175, 226, 238);
 }*/
 
@@ -34,14 +37,14 @@ input {
     width: 55px;
     height: 55px;
     margin: auto;
-    border: 1px solid purple;
+    border: 1px solid cyan;
     border-radius: 50px;
     font-size: 30px;
     text-align: center;
 }
 
 #pinkTurn {
-    color: blue;
+    color: white;
 }
 
 #blueTurn {
@@ -66,7 +69,7 @@ input {
 }
 #print {
     font-family: 'Cream Cake','Verdana', 'Tahoma', 'sans-serif';
-    color: purple;
+    color: cyan;
     font-size: 20px;
 }
 #main {

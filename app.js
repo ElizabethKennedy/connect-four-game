@@ -1,4 +1,4 @@
-//game piece position placement-based logic 
+//game piece position placement-based logic
 flag = 1;
 let count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0, count7 = 0;
 let column1 = ["b1-1", "b1-2", "b1-3", "b1-4", "b1-5", "b1-6"];
@@ -37,7 +37,7 @@ function win() {
 				document.getElementById('print').innerHTML = "The Pink Player Won";
 				disable();
 			} else if (array[col][row] == 'O' && array[col][row+1] == 'O' && array[col][row+2] == 'O' && array[col][row+3] == 'O'){
-				document.getElementById('print').innerHTML = "The Blue Player Won";
+				document.getElementById('print').innerHTML = "The Green Player Won";
 				disable();
 			}
 		}
@@ -50,20 +50,20 @@ function win() {
 				document.getElementById('print').innerHTML = "The Pink Player Won";
 				disable();
 			} else if (array[col][row] == 'O' && array[col+1][row] == 'O' && array[col+2][row] == 'O' && array[col+3][row] == 'O'){
-				document.getElementById('print').innerHTML = "The Blue Player Won";
+				document.getElementById('print').innerHTML = "The Green Player Won";
 				disable();
 			}
 		}
 	}
 
-	//diagonal left 
+	//diagonal left
 	for (let col = 0; col < array.length-3; col++){
 		for (let row = 0; row < array[0].length-3; row++){
 			if (array[col][row] == 'X' && array[col+1][row+1] == 'X' && array[col+2][row+2] == 'X' && array[col+3][row+3] == 'X'){
 				document.getElementById('print').innerHTML = "The Pink Player Won";
 				disable();
 			} else if (array[col][row] == 'O' && array[col+1][row+1] == 'O' && array[col+2][row+2] == 'O' && array[col+3][row+3] == 'O'){
-				document.getElementById('print').innerHTML = "The Blue Player Won";
+				document.getElementById('print').innerHTML = "The Green Player Won";
 				disable();
 			}
 		}
@@ -76,7 +76,7 @@ function win() {
 				document.getElementById('print').innerHTML = "The Pink Player Won";
 				disable();
 			} else if (array[col][row] == 'O' && array[col+1][row-1] == 'O' && array[col+2][row-2] == 'O' && array[col+3][row-3] == 'O'){
-				document.getElementById('print').innerHTML = "The Blue Player Won";
+				document.getElementById('print').innerHTML = "The Green Player Won";
 				disable();
 			}
 		}
@@ -112,7 +112,7 @@ function disable() {
 function play(s) {
 
 	if (flag == 1){
-		document.getElementById('blueTurn').style.display = "none";
+		document.getElementById('greenTurn').style.display = "none";
 		document.getElementById('pinkTurn').style.display = "initial";
 		switch (s){
 			case 1:
@@ -169,54 +169,54 @@ function play(s) {
 	}
 	else if (flag == 0){
 		document.getElementById('pinkTurn').style.display = "none";
-		document.getElementById('blueTurn').style.display = "initial";
+		document.getElementById('greenTurn').style.display = "initial";
 		switch (s){
 			case 1:
 				document.getElementById(column1[count1]).value = "O";
-				document.getElementById(column1[count1]).style.color = "blue";
-				document.getElementById(column1[count1]).style.backgroundColor = "blue";
+				document.getElementById(column1[count1]).style.color = "green";
+				document.getElementById(column1[count1]).style.backgroundColor = "green";
 				document.getElementById(column1[count1]).disabled = true;
 				count1++;
 				break;
 			case 2:
 				document.getElementById(column2[count2]).value = "O";
-				document.getElementById(column2[count2]).style.color = "blue";
-				document.getElementById(column2[count2]).style.backgroundColor = "blue";
+				document.getElementById(column2[count2]).style.color = "green";
+				document.getElementById(column2[count2]).style.backgroundColor = "green";
 				document.getElementById(column2[count2]).disabled = true;
 				count2++;
 				break;
 			case 3:
 				document.getElementById(column3[count3]).value = "O";
-				document.getElementById(column3[count3]).style.color = "blue";
-				document.getElementById(column3[count3]).style.backgroundColor = "blue";
+				document.getElementById(column3[count3]).style.color = "green";
+				document.getElementById(column3[count3]).style.backgroundColor = "green";
 				document.getElementById(column3[count3]).disabled = true;
 				count3++;
 				break;
 			case 4:
 				document.getElementById(column4[count4]).value = "O";
-				document.getElementById(column4[count4]).style.color = "blue";
-				document.getElementById(column4[count4]).style.backgroundColor = "blue";
+				document.getElementById(column4[count4]).style.color = "green";
+				document.getElementById(column4[count4]).style.backgroundColor = "green";
 				document.getElementById(column4[count4]).disabled = true;
 				count4++;
 				break;
 			case 5:
 				document.getElementById(column5[count5]).value = "O";
-				document.getElementById(column5[count5]).style.color = "blue";
-				document.getElementById(column5[count5]).style.backgroundColor = "blue";
+				document.getElementById(column5[count5]).style.color = "green";
+				document.getElementById(column5[count5]).style.backgroundColor = "green";
 				document.getElementById(column5[count5]).disabled = true;
 				count5++;
 				break;
 			case 6:
 				document.getElementById(column6[count6]).value = "O";
-				document.getElementById(column6[count6]).style.color = "blue";
-				document.getElementById(column6[count6]).style.backgroundColor = "blue";
+				document.getElementById(column6[count6]).style.color = "green";
+				document.getElementById(column6[count6]).style.backgroundColor = "green";
 				document.getElementById(column6[count6]).disabled = true;
 				count6++;
 				break;
 			case 7:
 				document.getElementById(column7[count7]).value = "O";
-				document.getElementById(column7[count7]).style.color = "blue";
-				document.getElementById(column7[count7]).style.backgroundColor = "blue";
+				document.getElementById(column7[count7]).style.color = "green";
+				document.getElementById(column7[count7]).style.backgroundColor = "green";
 				document.getElementById(column7[count7]).disabled = true;
 				count7++;
 				break;
