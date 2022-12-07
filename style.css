@@ -26,13 +26,18 @@ h1 {
     font-size: 75px;
 }
 
-h2, h3 {
+h2  {
     color: black;
     font-family: 'Cream Cake', 'Trebuchet';
     font-size: 45px;
 }
 
-
+/*h3 {
+    color: black;
+    font-family: 'Cream Cake', 'Trebuchet';
+    font-family: 25px;
+}
+*/
 input {
     width: 55px;
     height: 55px;
@@ -44,11 +49,11 @@ input {
 }
 
 #pinkTurn {
-    color: white;
+    color:cyan ;
 }
 
 #blueTurn {
-    color: palevioletred;
+    color: rgb(237, 106, 128);
 }
 
 #but {
